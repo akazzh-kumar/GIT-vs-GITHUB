@@ -2,3 +2,23 @@ GIT:  (version control)
   Git is a tool, save and , manage different version of your files and code.
 
 version control means track changes, recover previous saved code.
+
+Git Config: 
+  git config : git know who you are, like set username or email 
+
+  1.System level → affects all users on this computer.
+  2.Global level → affects only your user.
+  3.Local level → affects only the current repository.
+
+System Level:
+sudo: (super-user do)
+1. create system level settings: (file created)
+    sudo touch /etc/gitconfig   
+2. Add a system-level username and email
+    sudo git config --system user.name "System User"
+    sudo git config --system user.email "system@example.com"
+3. Verify system-level config
+    git config --system --list
+
+
+
