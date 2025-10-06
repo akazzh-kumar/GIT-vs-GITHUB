@@ -9,5 +9,6 @@ stash:
     git stash pop - it will cut and take the code.
     git stash list 
     git stash apply stash@{0} --apply particular stash
+    git stash show stash@{0} --we can see which file put in the stash
     git stash drop stash@{1} -Remove a stash without applying
     git stash push -m "message" - Stash with a message
