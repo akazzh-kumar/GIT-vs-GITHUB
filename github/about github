@@ -1,44 +1,18 @@
-GIT:  (version control)
-  Git is a tool, save and , manage different version of your files and code.
+GITHUB:  (Cloud Hosting)
+  GitHub is a remote platform to host Git repositories online
+  GitHub is a remote server, unlike Git which is local
 
-version control means track changes, recover previous saved code.
-
-Git Config: 
-  git config : git know who you are, like set username or email 
-
-  1.System level → affects all users on this computer.
-  2.Global level → affects only your user.
-  3.Local level → affects only the current repository.
-
-Listing all: git config --list --show-origin
-
-System Level:
-sudo: (super-user do)
-1. create system level settings: (file created)
-    sudo touch /etc/gitconfig   
-2. Add a system-level username and email
-    sudo git config --system user.name "System User"
-    sudo git config --system user.email "system@example.com"
-3. Verify system-level config
-    git config --system --list
-
-Global Level:
-Step 1: Set your global user
-    git config --global user.name "akash"
-    git config --global user.email "personal@example.com"
-Step 2: Verify global config
-    git config --global --list
-If you want to edit then use "git config --global --edit"
-
-Local Level:
-(Repo)
-1. git init    --> Initalize the Repo.
-2. git add .
-3. git commit -m "commited"
-4. git log --oneline
-5. git show --name-only <commit-hash>   --> show file names after commited
-6. git show <commit-hash> -- file1.txt  --> this is revert by (read only)
-7. git checkout <commit-hash> -- file1.txt --> this will be revert (write) 
+| Task                | Command                       |
+| ------------------- | ----------------------------- |
+| Clone repo          | `git clone <repo-url>`        |
+| Push changes        | `git push origin main`        |
+| Pull latest changes | `git pull origin main`        |
+| Create branch       | `git checkout -b feature`     |
+| Switch branch       | `git checkout main`           |
+| See remote          | `git remote -v`               |
+| Add remote          | `git remote add origin <url>` |
+_______________________________________________________
+  
 
 
 
