@@ -1,0 +1,13 @@
+stash:
+  stash is used to temporarily store the code and retrieve
+  example: Sometimes you need to quickly switch tasks or fix a bug, but you're not ready to commit your previous work.
+
+  git commands:
+    git stash  - Stash your changes(tracked only)
+    git stash -u  - Stash (tracked and untracked)
+    git stash apply -it will copy and take the code.
+    git stash pop - it will cut and take the code.
+    git stash list 
+    git stash apply stash@{0} --apply particular stash
+    git stash drop stash@{1} -Remove a stash without applying
+    git stash push -m "message" - Stash with a message
