@@ -1,0 +1,20 @@
+Commit Stages: (Saved changes)
+
+  1.Staging.
+  2.Commit.
+  3.Push.
+
+1.Staging commands:
+  git add <file> - Stage a file
+  git add --all or git add -A - Stage all changes
+  git status - See what is staged
+  git restore --staged <file> - Unstage a file   
+  git reset - unstage all files
+  
+2.commit
+  git commit -m "message" - Commit staged changes with a message
+  git commit -a -m "message" - Commit all tracked changes (skip staging)
+  git log - See commit history
+
+3. push
+  git push
